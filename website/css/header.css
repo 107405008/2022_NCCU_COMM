@@ -212,7 +212,6 @@ header {
         overflow:auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         transform: translateX(-120%);
         transition: 0.5s;
     }
@@ -257,7 +256,7 @@ header {
 
 
     header .menu > li {
-        
+        position: relative;
         padding: 8px;
         margin: 10px 0 0 0;
         color: #ffffff;
