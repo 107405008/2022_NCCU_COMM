@@ -246,10 +246,10 @@
         margin-top: 40px;
         background-image: url(../assets/image/group.jpg);
         background-attachment: fixed;
-        background-position: 40% 15%;
+        background-position: 40% 0%;
         background-repeat: no-repeat;
         background-size: auto 80vw;
-        position: relative;    
+        position: relative;
     }   
     
     .department-box .depart {
