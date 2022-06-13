@@ -212,6 +212,7 @@ header {
         overflow:auto;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         transform: translateX(-120%);
         transition: 0.5s;
     }
