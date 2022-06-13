@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+.department-box {
+    max-width: 1024px;
+    width: calc(100% - 50px);
+    margin: 30px auto 60px auto;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.department-box a {
+    text-decoration: none;
+    color: #909090;
+}
+
+.department-box a:hover {
+    color: #9e9e9e;
+    text-decoration: underline;
+}
+
+@media (min-width:1024px) {   
+
+    .department-box {
+        padding-left: 50px;
+    }
+    
+    .department-box h1 {
+        height: 110px;
+        color: #ffffff;
+        background-color: #9e9e9eaa;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 105px;
+        padding-right: 50px;
+        position: absolute;
+        top: 60px;
+    }
+    
+    .department-box h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }   
+    
+    
+    .department-box .scrolling {
+        width: 928px;
+        height: 380px;
+        margin-top: 10px;
+        background-image: url(../assets/image/group.jpg);
+        background-attachment: fixed;
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+        background-size:auto 80vw;
+        position: relative;
+        
+    
+    }
+    
+    .department-box .depart {
+        width: 928px;
+        margin: 40px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .depart > div > div {
+        margin-bottom: 20px;
+    }
+    .depart .depart_text { 
+        width: 566px;
+        margin: 0 46px 0 0 ;
+        line-height: 28px;
+    }
+    
+    
+    .depart_text img {
+        width: 100%;
+    }
+
+    .col {
+        font-size: 15px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-content: space-between
+
+    }
+    .col li {
+        margin-right: 10px;
+    }
+    .depart .info {
+        margin: 50px 0 0;
+    }
+    .depart .info div {
+        margin-bottom: 5px;
+    }
+
+    iframe {
+        width:326px;
+        height:220px;
+        margin-bottom: 10px;
+    }
+    #carouselExampleControls {
+        width:326px;
+    }
+    #carouselExampleControls img {
+        height: 217px;
+        object-fit: cover;
+    }
+    
+}
+
+@media (max-width:1024px) and (min-width:767px) {
+   
+    .department-box h1 {
+        height: 72px;
+        color: #ffffff;
+        background-color: #9e9e9eaa;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 72px;
+        padding-right: 50px;
+        position: absolute;
+        top: 40px;
+    }
+    
+    .department-box h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    
+    
+    .department-box .scrolling {
+        width: 100%;
+        height: 350px;
+        margin-top: 10px;
+        background-image: url(../assets/image/group.jpg);
+        background-attachment: fixed;
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+        background-size:auto 80vw;
+        position: relative;
+        
+    
+    }
+    
+    .department-box .depart {
+        width: 100%;
+        margin: 40px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .depart > div > div {
+        margin-bottom: 20px;
+    }
+    .depart .depart_text {
+        line-height: 28px;
+        margin: 0 0 46px 0 ;
+    }
+    
+    .depart_text img {
+        width: 100%;
+    }
+    
+    .col {
+        font-size: 15px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-content: flex-start
+
+    }
+    .col li {
+        margin-right: 30px;
+    }
+    .depart .co {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .depart .co1 {
+        flex-direction: row-reverse;
+        justify-content:flex-end
+    }
+    
+    .depart .info {
+        margin: 50px 50px 0 0;
+    }
+    .depart .info div {
+        margin-bottom: 5px;
+    }
+
+    .depart .x{
+        margin-top: 0;
+        
+    }
+
+    iframe {
+        width:400px;
+        height:250px;
+        margin-bottom: 10px;
+    }
+    #carouselExampleControls {
+        width: 400px;
+    }
+
+    #carouselExampleControls img {
+        height: 278px;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width:767px) {
+    
+    .department-box h1 {
+        height: 55px;
+        color: #ffffff;
+        background-color: #9e9e9eaa;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 52px;
+        padding-right: 50px;
+        position: absolute;
+        top: 20px;
+    }
+    
+    .department-box h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    
+    
+    .department-box .scrolling {
+        width: 100%;
+        height: 37vw;
+        margin-top: 40px;
+        background-image: url(../assets/image/group.jpg);
+        background-attachment: fixed;
+        background-position: 40% 0%;
+        background-repeat: no-repeat;
+        background-size: auto 80vw;
+        position: relative;    
+    }   
+    
+    .department-box .depart {
+        width: 100%;
+        margin: 40px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .depart > div > div {
+        margin-bottom: 20px;
+    }
+    .depart .depart_text {
+        line-height: 28px;
+        margin: 0 0 46px 0 ;
+    }
+    
+    .depart_text img {
+        width: 100%;
+    }
+    
+    .depart .info {
+        margin: 50px 50px 0 0;
+    }
+    .depart .info div {
+        margin-bottom: 5px;
+    }
+
+    .x {
+        width: 100%;
+        margin-right: 0;
+    }
+    iframe {
+        width:100%;
+        height: 45vh;
+        margin-bottom: 10px;
+    }
+}
+

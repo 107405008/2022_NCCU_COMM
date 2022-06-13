@@ -1,0 +1,817 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fefefe;
+    overflow-x: hidden;
+}
+
+.department-items .department-item {
+    background-blend-mode: darken;
+    
+    
+}
+.department-items .department-item:hover {
+    background-blend-mode:multiply;
+    
+}
+
+.department-items .department-item a {
+    transform: scale(1,1);
+}
+
+.department-items .department-item a:hover  {
+    transform: scale(1.04,1.04);
+    transition: all 500ms ease-in-out;
+}
+
+
+.profile-items .profile-item {
+    transform: scale(1,1);
+}
+
+.profile-items .profile-item:hover{
+    transform: scale(1.1,1.1);
+    transition: all 500ms ease-in-out;
+}
+
+
+
+.more {
+    width: 120px;
+    height: 40px;
+    font-weight: 700;
+    border: 0;
+    margin-bottom: 40px;
+    transform: scale(1,1);
+    
+}
+
+.more:hover {
+        
+    transform: scale(1.1,1.1);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+
+
+
+/*PC*/
+
+@media (min-width: 1024px) {
+
+    /*按鈕至中問題處理*/
+    .button-fix {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+
+    /*最新公告*/
+    .relateds {
+        width: 800px;
+        background-color: #fefefe;
+        margin:40px auto 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+
+    .related-text {
+
+        color: #494949;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+    }
+
+    .related-items {
+        max-width: 800px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .related-items .related-item {
+        width: 247px;
+        border: 0.5px solid #d8d8d8;
+        border-radius: 10%;
+        padding: 10px;
+        padding-bottom:40px ;
+        margin-bottom: 20px;
+        transform: scale(1,1);
+        
+    }
+
+    .related-item:hover{
+        background-color: #26262608;
+        transform: scale(1.02,1.02);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .related-items .related-item a {
+        width: 247px;
+        position: relative;
+    }
+
+    .related-items .related-item img {
+        width: 247.5px;
+        height: 155px;
+        object-fit: cover;  
+        border-top-left-radius: 27px;
+        border-top-right-radius:27px;
+        position: relative;
+        top: -12px;
+        left: -11px;
+    }
+
+    .related-items .related-item h6 {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 28px;
+        color: #A3403E;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .related-items .related-item h3 {
+        width: 228px;
+        color: #262626;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        margin: 5px 0;
+    }
+
+
+    .related-items .related-item span {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #D0d0d0;
+    }
+
+
+    /*系所簡介*/
+    .departments {    
+        width: 100%;
+        background-color: #fefefe;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-text {
+
+        color: #494949;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .department-items {
+        max-width: 1280px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .department-items .department-item {
+        width: 100%;
+        height: 360px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size:100% auto;
+        background-blend-mode: darken;
+        
+        
+    }
+    .department-items .department-item:hover {
+        background-blend-mode:multiply;
+        
+    }
+    
+    .department-items .department-item img {
+        width: 118px;
+        height: 118px;
+        margin-left: 0px;
+        margin-right: 20px;
+        
+        object-fit: contain;
+    }
+    .department-items .department-item div {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .department-items .department-item a {
+        max-width: 920px;
+        width: 100%;
+        height: 360px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .department-items .department-item h3 {
+
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 32px;
+        margin: 10px 0px 5px;
+    }
+
+    .department-items .department-item p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #fff;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+
+    /*人物特寫*/
+    .profile {
+        width: 100%;
+        background-color: #d8d8d8;
+        padding: 30px;
+        padding-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-text {
+        color: #494949;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
+
+
+    }
+
+    .profile-items {
+        max-width: 756px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+
+    }
+    .profile-items .profile-item {
+        width: 247px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+    }
+
+
+
+    .profile-items .profile-item a{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center
+    }
+
+    
+
+    .profile-items .profile-item img {
+        width: 148px;
+        height: 148px;
+        border-radius:50%;
+        object-fit: cover;
+    }
+
+    .profile-items .profile-item h3 {
+        width: 148px;
+        color: #262626;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        margin: 5px 0;
+    }
+
+}
+
+/*Pad*/
+
+@media (max-width: 1024px) and (min-width: 767px) {
+
+    .button-fix {
+        display: flex;
+        flex-direction: column;     
+        align-items: center
+    }
+    
+    .relateds {
+        width: 708px;
+        background-color: #fefefe;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .related-text {
+        color: #494949;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+    }
+
+    .related-text > div {
+        border: 1px solid #D0d0d0;
+        height: 10px;
+    }
+
+
+    .related-items {
+        width: 501px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
+
+
+    .related-items .related-item {
+        width: 247px;
+        border: 0.5px solid #d8d8d8;
+        border-radius: 10%;
+        padding: 10px;
+        padding-bottom:40px ;
+        margin-bottom: 20px;
+    }
+    .related-items .related-item a {
+        width: 247px;
+        position: relative;
+    }
+
+    .related-items .related-item img {
+        width: 247.5px;
+        height: 155px;
+        object-fit: cover;  
+        border-top-left-radius: 27px;
+        border-top-right-radius:27px;
+        position: relative;
+        top: -12px;
+        left: -11px;
+    }
+
+
+    .related-items .related-item h6 {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 28px;
+        color: #A3403E;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .related-items .related-item h3 {
+        width: 228px;
+        color: #262626;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        margin: 5px 0;
+    }
+
+
+    .related-items .related-item span {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #D0d0d0;
+    }
+
+
+    /*系所簡介*/
+    .departments {    
+        width: 100%;
+        background-color: #fefefe;  
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .department-text {
+        color: #494949;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+    }
+    
+    .department-text > div {
+        height: 10px;
+    }
+
+    .department-items {
+        max-width: 1023px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .department-items .department-item {
+        width: 100%;
+        height: 360px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    
+    .department-items .department-item img {
+        width: 150px;
+        height: 146px;
+        object-fit: contain;
+    }
+    .department-items .department-item div {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-items .department-item a {
+        height: 360px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .department-items .department-item h3 {
+
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 28px;
+        margin: 20px 0px 10px
+    }
+
+    .department-items .department-item p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #fff;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }    
+    
+    .profile {
+        background-color: #d8d8d8;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+
+    }
+
+    .profile-text {
+        width: 180px;
+        color: #494949;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+    .profile-items {
+        max-width: 756px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+
+    }
+    .profile-items .profile-item {
+        width: 260px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+    }
+
+
+
+
+    .profile-items .profile-item a{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center
+    }
+
+    .profile-items .profile-item img {
+        width: 260px;
+        height: 260px;
+        border-radius:50%;
+        object-fit: cover;
+        
+    }
+
+
+
+    .profile-items .profile-item h3 {
+        width: 260px;
+        color: #262626;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-top: 30px;
+    } 
+            
+}
+
+/*Mobile*/
+
+@media (max-width: 767px) {
+
+    .button-fix {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .relateds {
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        padding:0px;
+        flex-direction: column
+    }
+
+
+    .related-text {
+        width: 180px;
+        color: #494949;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .related-text > div {
+        height: 10px;
+        
+    }
+
+    .related-items {
+        max-width: 732px;   
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }
+    
+    .related-items .related-item {
+        width: 350px;
+        border-right: none;
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+
+    }
+
+    .related-items .related-item a {
+        width:350px ;
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        justify-content: space-around
+        
+    }
+
+    .related-items .related-item img {
+        width: 104px;
+        height: 81px;
+        margin-left: 8px;
+        object-fit: cover;
+        
+    }    
+    
+    .related-items .related-item h6 {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #A3403E;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .related-items .related-item h3 {
+        width: 191px;
+        color: #262626;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        margin: 5px 0;
+    }
+
+    .related-items .related-item span {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #D0d0d0;
+    }
+
+    /*系所簡介*/
+    .departments {    
+        
+        background-color: #fefefe;
+        padding: 30px;
+        padding-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-text {
+        width: 180px;
+        color: #494949;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .department-text > div {
+        height: 10px;
+    }
+
+    .department-items {
+        max-width: 756px;
+        margin-bottom: 30px;
+    }
+
+    .department-items .department-item {
+
+        height: 360px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    
+    .department-items .department-item img {
+        width: 150px;
+        height: 146px;
+        object-fit: contain;
+    }
+    .department-items .department-item div {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-items .department-item a {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-items .department-item h3 {
+
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 28px;
+        margin: 20px 0px 10px
+    }
+
+    .department-items .department-item p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #fff;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }    
+
+
+    .profile {
+        background-color: #d8d8d8;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        padding-bottom: 50px;
+
+    }
+
+    .profile-text {
+        width: 180px;
+        color: #494949;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+    .profile-items {
+        max-width: 756px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+
+    }
+    .profile-items .profile-item {
+        width: 260px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+
+
+
+    }
+
+    .profile-items .profile-item a{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center
+    }
+
+    .profile-items .profile-item img {
+        width: 260px;
+        height: 260px;
+        border-radius:50%;
+        object-fit: cover;
+    }
+
+    .profile-items .profile-item h3 {
+        width: 260px;
+        color: #262626;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-top: 30px;
+    }
+
+
+    
+            
+}
